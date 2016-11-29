@@ -1,0 +1,15 @@
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Hello Facebook</title>
+	</head>
+	<body>
+		<h3>Hello, <span th:text="${facebookProfile.firstName}"></span>!</h3>
+
+		<div th:each="educationExperience:${education}">
+			<b th:text="${education.degree}"></b>
+			<p th:text="${education.school}"></p>
+			<p th:text="${education.year}"></p>
+			<hr/>
+		</div>
+	</body>
+</html>
